@@ -1,0 +1,20 @@
+<html>
+  <head></head>
+
+  <body>
+    <div>
+      <img src="./bitcamp-brand/logos/badge.png" alt="Bitcamp Badge" />
+      <h1>Bitcamp Alumni Network</h1>
+
+      <label for="pass">Password</label><input id="pass" type="password" />
+      <input type="button" value="Submit" onclick="onSubmit()" />
+    </div>
+    <script type="text/javascript">
+      function onSubmit() {
+        const pw = document.getElementById("pass").value;
+        redir("join", pw);
+      }
+    </script>
+    <script type="text/javascript" src="./request.js"></script>
+  </body>
+</html>

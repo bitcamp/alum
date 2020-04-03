@@ -9,25 +9,11 @@
       <input type="button" value="Submit" onclick="onSubmit()" />
     </div>
     <script type="text/javascript">
-      async function onSubmit() {
+      function onSubmit() {
         const pw = document.getElementById("pass").value;
-
-        const resp = await fetch(
-          "https://fcuouabkea.execute-api.us-east-1.amazonaws.com/default/alumRedir",
-          {
-            method: "POST",
-            mode: "cors",
-            redirect: "follow",
-            body: JSON.stringify({
-              origin: "index",
-              password: pw
-            })
-          }
-        );
-
-        console.log(resp);
-        console.log("aaa");
+        redir("index", pw);
       }
     </script>
+    <script type="text/javascript" src="./request.js"></script>
   </body>
 </html>
