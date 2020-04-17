@@ -3,11 +3,7 @@ import os
 
 def lambda_handler(event, context):
     err_resp = {
-        'status': '200',
-        'headers': {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, POST, OPTIONS'
-        }
+        'statusCode': '400'
     }
 
     if not 'body' in event:
@@ -28,11 +24,7 @@ def lambda_handler(event, context):
 
     response = {
         'statusCode': 200,
-        'body': url,
-        'headers': {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, POST, OPTIONS'
-        }
+        'body': url
     }
 
     return response

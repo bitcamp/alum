@@ -44,8 +44,11 @@ h1 {
 #submit {
   width: 32px;
   height: 32px;
-  background: var(--color-bitcamp);
   display: inline-block;
+}
+
+.disabled {
+  background: var(--color-gray);
 }
 
 #input {
