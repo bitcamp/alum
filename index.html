@@ -5,11 +5,21 @@
   </head>
   <body>
     <div id="holder">
-      <img src="./bitcamp-brand/logos/badge.png" alt="Bitcamp Badge" />
-      <h1>Bitcamp Alumni Network</h1>
-
-      <label for="pass">Password</label><input id="pass" type="password" />
-      <input type="button" value="Submit" onclick="onSubmit()" />
+      <img
+        id="badge"
+        src="./bitcamp-brand/logos/badge.png"
+        alt="Bitcamp Badge"
+      />
+      <h1>Alumni Network</h1>
+      <div id="input">
+        <input id="pass" type="password" placeholder="Password" />
+        <img
+          id="submit"
+          src="arrow-right.png"
+          alt="Submit"
+          onclick="onSubmit()"
+        />
+      </div>
     </div>
     <script type="text/javascript">
       function onSubmit() {

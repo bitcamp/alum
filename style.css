@@ -6,14 +6,20 @@ html {
 }
 
 body {
-  background: var(--color-white);
+  background: #eaebe6;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Avenir";
 }
 
-img {
+#holder {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+#badge {
   height: 128px;
   width: 128px;
   margin: auto;
@@ -22,4 +28,32 @@ img {
 
 h1 {
   font-family: "Aleo";
+}
+
+#pass {
+  text-align: left;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#password-label {
+  display: block;
+  text-align: left;
+}
+
+#submit {
+  width: 32px;
+  height: 32px;
+  background: var(--color-bitcamp);
+  display: inline-block;
+}
+
+#input {
+  border-bottom: 3px solid var(--color-bitcamp);
+}
+
+input {
+  border: 0px;
+
+  margin: 0px;
 }
