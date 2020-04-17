@@ -10,7 +10,7 @@ async function redir(origin, password) {
     method: "POST",
     headers: myHeaders,
     body: raw,
-    redirect: "follow"
+    redirect: "follow",
   };
 
   const resp = await fetch(
@@ -23,4 +23,13 @@ async function redir(origin, password) {
     new URL(text);
     window.location.replace(text);
   } catch (_) {}
+}
+
+function onInput() {
+  const val = document.getElementById("pass").value;
+  if (val.length > 0) {
+    document.getElementById("input").classList.remove("disabled");
+  } else {
+    document.getElementById("input").classList.add("disabled");
+  }
 }

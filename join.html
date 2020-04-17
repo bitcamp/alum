@@ -3,14 +3,32 @@
     <link rel="stylesheet" type="text/css" href="./bitcamp-brand/bitcamp.css" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
+
   <body>
     <div id="holder">
-      <img src="./bitcamp-brand/logos/badge.png" alt="Bitcamp Badge" />
-      <h1>Bitcamp Alumni Network</h1>
-
-      <label for="pass">Password</label><input id="pass" type="password" />
-      <input type="button" value="Submit" onclick="onSubmit()" />
+      <img
+        id="badge"
+        src="./bitcamp-brand/logos/badge.png"
+        alt="Bitcamp Badge"
+      />
+      <h1>Alumni Network</h1>
+      <div id="input" class="disabled">
+        <input
+          id="pass"
+          type="password"
+          placeholder="Password"
+          oninput="onInput()"
+        />
+        <img
+          id="submit"
+          src="./arrow-right.png"
+          alt="Submit"
+          onclick="onSubmit()"
+          class="disabled"
+        />
+      </div>
     </div>
+    <p>&copy; Copyright 2020 Bitcamp, LLC</p>
     <script type="text/javascript">
       function onSubmit() {
         const pw = document.getElementById("pass").value;

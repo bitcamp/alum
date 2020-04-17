@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Avenir";
+  flex-direction: column;
 }
 
 #holder {
@@ -47,16 +48,27 @@ h1 {
   display: inline-block;
 }
 
-.disabled {
-  background: var(--color-gray);
+#input.disabled {
+  border-bottom: 3px solid var(--color-midnight);
+  transition: all 0.4s;
+}
+
+#input.disabled img {
+  background: var(--color-midnight);
+  transition: all 0.4s;
 }
 
 #input {
   border-bottom: 3px solid var(--color-bitcamp);
+  transition: all 0.4s;
+}
+
+#input img {
+  background: var(--color-bitcamp);
+  transition: all 0.4s;
 }
 
 input {
   border: 0px;
-
   margin: 0px;
 }
