@@ -16,7 +16,7 @@ body {
 
 #holder {
   background: white;
-  padding: 2rem;
+  padding: 3.5rem 2rem;
   text-align: center;
 }
 
@@ -49,18 +49,19 @@ h1 {
 }
 
 #input.disabled {
-  border-bottom: 3px solid var(--color-midnight);
+  border-bottom: 3px solid #c7c7cc;
   transition: all 0.4s;
 }
 
 #input.disabled img {
-  background: var(--color-midnight);
+  background: #c7c7cc;
   transition: all 0.4s;
 }
 
 #input {
   border-bottom: 3px solid var(--color-bitcamp);
   transition: all 0.4s;
+  display: flex;
 }
 
 #input img {
@@ -70,5 +71,12 @@ h1 {
 
 input {
   border: 0px;
+  line-height: 32px;
   margin: 0px;
+}
+
+#copy {
+  color: #c7c7cc;
+  position: absolute;
+  bottom: 0;
 }
