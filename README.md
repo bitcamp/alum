@@ -17,3 +17,10 @@ Access-Control-Expose-Headers *
 6. Update the url in `request.js` to point to your API gateway.
 
 You should be done!
+
+## Frontend setup
+1. Replace the url in `.gitmodules` with whatever other repo contains your branding/styles (or remove alltogether).
+2. Update `style.css` to reflect new colors/layout.
+3. Replace meta information and images in `index.html` and `join.html`.
+4. Update `Origin` header and `fetch` url in `request.js`.
+5. Deploy! We use Github pages and route it to a subdomain of ours.
