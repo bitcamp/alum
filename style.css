@@ -12,6 +12,7 @@ body {
   justify-content: center;
   font-family: "Avenir";
   flex-direction: column;
+  color: var(--color-midnight);
 }
 
 #holder {
@@ -62,6 +63,8 @@ h1 {
   border-bottom: 3px solid var(--color-bitcamp);
   transition: all 0.4s;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #input img {
@@ -73,6 +76,7 @@ input {
   border: 0px;
   line-height: 32px;
   margin: 0px;
+  font-family: "Avenir";
 }
 
 #copy {
