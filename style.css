@@ -43,7 +43,6 @@ body {
 
 #badge {
   height: 128px;
-  width: 128px;
   margin: auto;
   display: block;
 }
@@ -98,6 +97,7 @@ input {
   line-height: 32px;
   margin: 0px;
   font-family: "Avenir";
+  outline: none;
 }
 
 #copy {
