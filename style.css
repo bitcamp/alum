@@ -2,6 +2,7 @@
   --bg-color: #eaebe6;
   --holder-color: white;
   --color-gray: #c7c7cc;
+  --text-color: var(--color-midnight);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -9,6 +10,7 @@
     --bg-color: #0e181a;
     --holder-color: #142328;
     --color-gray: #404b4d;
+    --text-color: #eaebe6;
   }
 }
 
@@ -20,7 +22,7 @@ html {
 }
 
 body {
-  color: var(--color-midnight);
+  color: var(--text-color);
   background: var(--bg-color);
 
   display: flex;
@@ -91,6 +93,7 @@ h1 {
 }
 
 input {
+  background: var(--holder-color);
   border: 0px;
   line-height: 32px;
   margin: 0px;
