@@ -26,9 +26,18 @@ async function redir(origin, password) {
 }
 
 function onBlur() {
-  document.getElementById("input").classList.add("disabled");
+  document.getElementById("pw-form").classList.remove("active");
 }
 
 function onFocus() {
-  document.getElementById("input").classList.remove("disabled");
+  document.getElementById("pw-form").classList.add("active");
+}
+
+function onInput() {
+  const val = document.getElementById("pass").value;
+  if (val.length > 0) {
+    document.getElementById("submit").classList.add("active");
+  } else {
+    document.getElementById("submit").classList.remove("active");
+  }
 }
