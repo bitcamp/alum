@@ -3,7 +3,11 @@ import os
 
 def lambda_handler(event, context):
     err_resp = {
-        'statusCode': '400'
+        'statusCode': '400',
+        'headers': {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, OPTIONS'
+        }
     }
 
     if not 'body' in event:
