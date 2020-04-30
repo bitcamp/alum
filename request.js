@@ -25,11 +25,10 @@ async function redir(origin, password) {
   } catch (_) {}
 }
 
-function onInput() {
-  const val = document.getElementById("pass").value;
-  if (val.length > 0) {
-    document.getElementById("input").classList.remove("disabled");
-  } else {
-    document.getElementById("input").classList.add("disabled");
-  }
+function onBlur() {
+  document.getElementById("input").classList.add("disabled");
+}
+
+function onFocus() {
+  document.getElementById("input").classList.remove("disabled");
 }
