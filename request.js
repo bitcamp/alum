@@ -41,3 +41,9 @@ function onInput() {
     document.getElementById("submit").classList.remove("active");
   }
 }
+
+function onKeyPress(e) {
+  if (e.keyCode == 13) {
+    onSubmit();
+  }
+}
