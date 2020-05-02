@@ -81,6 +81,8 @@ h1 {
   display: inline-block;
   background: var(--color-gray);
   transition: all 0.4s;
+
+  cursor: pointer;
 }
 
 #submit.active {
